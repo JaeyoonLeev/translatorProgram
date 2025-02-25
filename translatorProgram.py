@@ -14,8 +14,8 @@ def btnTranslateClick(): #번역시작
         result1 = translator.translate(text, dest='en', src='auto')
         afterText.delete(1.0, "end-1c")
         afterText.insert(1.0, result1.text)
-    except AttributeError:
-        print("Error: Translation failed. Please try again later.")
+    except Exception as e:
+        print("Error: ", e)
 
 def btnTranslateSoundClick(): #소리재생
     try:
@@ -24,15 +24,15 @@ def btnTranslateSoundClick(): #소리재생
         tts.save("completed.mp3")
         playsound("completed.mp3")
         os.remove("completed.mp3")
-    except AttributeError:
-        print("Error: Translation failed. Please try again later.")     
+    except Exception as e:
+        print("Error: ", e)   
 
 def btnDeleteClick(): #내용지우기
     try:
         beforeText.delete(1.0, "end-1c")
         afterText.delete(1.0, "end-1c")
-    except AttributeError:
-        print("Error: Translation failed. Please try again later.")           
+    except Exception as e:
+        print("Error: ", e)           
 
 
 ##tkinter설정
