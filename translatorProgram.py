@@ -47,7 +47,7 @@ btnTranslate = tkinter.Button(window,
                         overrelief="solid",
                         text="번역하기", 
                         width=15, 
-                        command=btnTranslateClick, #7번째줄의 buttonClickk 함수 실행 
+                        command=btnTranslateClick, 
                         repeatdelay=1000, 
                         repeatinterval=100)
 
@@ -55,7 +55,7 @@ btnTranslateSound = tkinter.Button(window,
                         overrelief="solid",
                         text="번역내용 듣기", 
                         width=15, 
-                        command=btnTranslateSoundClick, #7번째줄의 buttonClickk 함수 실행 
+                        command=btnTranslateSoundClick, 
                         repeatdelay=1000, 
                         repeatinterval=100)
 
@@ -63,7 +63,7 @@ btnDelete = tkinter.Button(window,
                         overrelief="solid",
                         text="내용 지우기", 
                         width=15, 
-                        command=btnDeleteClick, #7번째줄의 buttonClickk 함수 실행 
+                        command=btnDeleteClick, 
                         repeatdelay=1000, 
                         repeatinterval=100)
 
